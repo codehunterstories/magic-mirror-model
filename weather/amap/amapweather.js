@@ -4,7 +4,7 @@
  * Module: Weather
  *
  * 高德地图-天气预报 API
- * By Aaron https://github.com/codehunterstories/magic-mirror-model
+ * By Aaron https://github.com/codehunterstories/magic-mirror-model/tree/main/weather/amap
  * MIT Licensed.
  *
  * This class is the blueprint for a weather provider.
@@ -41,7 +41,7 @@ WeatherProvider.register("amapweather", {
 				let currentWeather;
 				let location;
 				if (data && data.status === '1') {
-					live = data.lives[0];
+					const live = data.lives[0];
 					currentWeather = this.generateWeatherObjectFromCurrent(live);
 					location = `${live.province}, ${live.city}`;
 				}

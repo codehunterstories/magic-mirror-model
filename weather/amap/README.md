@@ -4,32 +4,32 @@
 
 ## 注册高德开放平台开发者
 
-[高德控制台](https://console.amap.com/dev/id/phone)
+打开[高德控制台](https://console.amap.com/dev/id/phone)
 
 ## 创建应用
 
-1. 进入**【[我的应用](https://console.amap.com/dev/key/app)】**，点击**创建新应用**，应用类型选择**天气**，点击新建
-2. 创建应用成功后，回到列表，点击**添加 Key，服务平台**类型选择 **Web 服务**，然后点击**提交**按钮
+1. 进入[我的应用](https://console.amap.com/dev/key/app)，点击**创建新应用**，应用类型选择**天气**，点击**新建**
+2. 创建应用成功后，回到列表，点击**添加 Key**，服务平台类型选择 **Web 服务**，然后点击**提交**按钮
 3. 添加成功后，在应用表单列表会显示 **Key** 的值，后续的接口调用就可以使用了
 
 ## 查看天气预报 API 接口文档
 
-接口详细信息请查看：[https://lbs.amap.com/api/webservice/guide/api/weatherinfo](https://lbs.amap.com/api/webservice/guide/api/weatherinfo)
+接口详细信息请查看：[高德地图天气预报接口](https://lbs.amap.com/api/webservice/guide/api/weatherinfo)
 
 1. 关键参数如下：
 
     **API服务地址：**
 
-    **GET** https://restapi.amap.com/v3/weather/weatherInfo?key=${key}&city=${city}&extensions=${extensions}&output=${output}
+    **GET** <https://restapi.amap.com/v3/weather/weatherInfo?key=${key}&city=${city}&extensions=${extensions}&output=${output}>
 
-    其中 **${key}、${city}、${extensions}、${output}** 需要替换为具体的值。
+    其中 **`${key}、${city}、${extensions}、${output}`** 需要替换为具体的值。
 
     **请求参数说明：**
 
-    - **key：**请求服务权限标识，创建的应用的 **key** 值
-    - **city：**[城市编码](https://lbs.amap.com/api/webservice/download)
-    - **extensions：**气象类型，可选值：**base/all**，**base** 返回实况天气，**all** 返回预报天气
-    - **output：**返回格式，默认 **JSON**，可选值：**JSON**, **XML**
+    - **key**：请求服务权限标识，创建的应用的 **key** 值
+    - **city**：[城市编码](https://lbs.amap.com/api/webservice/download)
+    - **extensions**：气象类型，可选值：**base/all**，**base** 返回实况天气,**all** 返回预报天气
+    - **output**：返回格式，默认 **JSON**，可选值：**JSON**, **XML**
 
     **返回结果：**
 
@@ -142,15 +142,15 @@
 
     **天气现象：**
 
-    ![Untitled](AMap%20Weather%201886fffbfeeb42ff989f8aeacf09baa8/Untitled.png)
+    ![Untitled](asset/Untitled.png)
 
     **风力表：**
 
-    ![Untitled](AMap%20Weather%201886fffbfeeb42ff989f8aeacf09baa8/Untitled%201.png)
+    ![Untitled](asset/Untitled%201.png)
 
     **风向表：**
 
-    ![Untitled](AMap%20Weather%201886fffbfeeb42ff989f8aeacf09baa8/Untitled%202.png)
+    ![Untitled](asset/Untitled%202.png)
 
 2. 请求示例
 
@@ -159,7 +159,6 @@
     ```
 
 3. 配额限制说明
-
 
     | 服务 | 调用量上限（次/日） | 并发量上限（次/秒） |
     | --- | --- | --- |
