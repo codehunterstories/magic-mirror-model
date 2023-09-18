@@ -147,7 +147,7 @@ WeatherProvider.register("amapweather", {
 		return windCardinals.hasOwnProperty(direction) ? windCardinals[direction] : null;
 	},
 
-	// 转换天气图标
+	// 转换天气图标 http://weathericons.io 默认 wi-%
 	convertWeatherType(weatherType) {
 		const weatherTypes = {
 			"晴": "day-sunny",
